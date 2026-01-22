@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beau Bernards | Mechanical Engineering</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="container">
+    <h1>Beau Bernards</h1>
+    <p class="tagline">Mechanical Engineering • Controls/Robotics • Manufacturing/Process</p>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>About</h2>
+      <p>
+        Senior Mechanical Engineering student (UW–Madison). Interested in robotics/controls,
+        manufacturing, and energy systems. I build real hardware and write the code to run it.
+      </p>
+      <p>
+        <a class="button" href="Beau_Bernards_Resume.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a>
+        <a class="button secondary" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="button secondary" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+
+      <article class="project">
+        <h3>Autonomous Quadrotor Drone (Controls, Motion Planning, Estimation)</h3>
+        <p>Trajectory planning + state estimation + cascaded/geometric control for stable flight and tracking.</p>
+        <ul>
+          <li>Implemented planning + tracking pipeline; validated with simulation/flight logs.</li>
+          <li>Worked with dynamics, Euler angle kinematics, and estimator tuning.</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <h3>3-Axis Droplet Injection System (Acoustic Levitation)</h3>
+        <p>Built a precision motion + levitation setup for controlled droplet handling (pharma-oriented workflow).</p>
+        <ul>
+          <li>Stepper/servo motion control; repeatable positioning; documented procedures and results.</li>
+          <li>Designed for clean, traceable operation (think: validation mindset and controlled processes).</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <h3>WiscWind: Small-Scale Wind Turbine (Design + Manufacturing)</h3>
+        <p>Designed and manufactured a small-scale wind turbine prototype and evaluated performance.</p>
+      </article>
+    </section>
+
+    <section id="experience" class="card">
+      <h2>Experience</h2>
+      <ul class="timeline">
+        <li>
+          <strong>Project Engineer Intern</strong> — Road Construction<br />
+          <span class="muted">Detour map design, plan review, coordination with stakeholders</span>
+        </li>
+        <li>
+          <strong>Target</strong> — Fulfillment Specialist<br />
+          <span class="muted">Fast-paced operations, accuracy, teamwork</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <div class="chips">
+        <span>MATLAB/Simulink</span><span>Python</span><span>CAD</span><span>Controls</span><span>FEA basics</span>
+        <span>Manufacturing</span><span>Data analysis</span><span>Technical writing</span>
+      </div>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+      <p>Location: Chicago / Madison (adjust as needed)</p>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p class="muted">© <span id="year"></span> Beau Bernards • Built with GitHub Pages</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
